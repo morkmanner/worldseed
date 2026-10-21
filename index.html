@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Worldseed – Phase 0</title>
+  <link rel="stylesheet" href="/src/ui/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header><h1>Worldseed</h1><span id="clock"></span></header>
+    <canvas id="world"></canvas>
+    <section id="stats"></section>
+    <section id="controls">
+      <div class="row" id="speed">
+        <button data-speed="0">⏸</button>
+        <button data-speed="1" class="active">1x</button>
+        <button data-speed="2">2x</button>
+        <button data-speed="4">4x</button>
+      </div>
+      <div class="row">
+        <button id="food">🍎 Spawn food (tap map)</button>
+        <button id="drought">☀️ Drought</button>
+        <button id="reset">↻ New world</button>
+      </div>
+    </section>
+    <section id="log"></section>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
