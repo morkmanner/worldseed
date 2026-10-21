@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #14171c; color: #e8e8e8; font-family: system-ui, sans-serif; }
+#app { max-width: 680px; margin: 0 auto; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
+header { display: flex; justify-content: space-between; align-items: baseline; }
+h1 { margin: 0; font-size: 1.2rem; }
+canvas { align-self: center; background: #000; border-radius: 6px; touch-action: manipulation; }
+#stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+#stats div { background: #222831; border-radius: 6px; padding: 6px; text-align: center; }
+#stats b { display: block; font-size: 1.1rem; }
+#stats small { color: #9aa; }
+.row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+button { flex: 1; min-height: 44px; padding: 0 10px; border: 0; border-radius: 6px; background: #2d3541; color: inherit; font-size: 0.95rem; }
+button.active { background: #3d7be0; }
+#log { background: #222831; border-radius: 6px; padding: 6px; height: 180px; overflow-y: auto; font-size: 0.85rem; }
+#log small { color: #8a9; margin-right: 4px; }
+#log .death { color: #e0a0a0; } #log .birth { color: #a0e0a8; }
+#log .warning, #log .extinction { color: #ffcf5a; font-weight: 600; }
+#log .event { color: #9cc4ff; }
+@media (min-width: 700px) { #log { height: 240px; } }
